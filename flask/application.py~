@@ -1,0 +1,9 @@
+from flask import Flask
+app_polinet = Flask(__name__)
+
+@app_polinet.route('/polinet')
+def welcome_polinet():
+    return 'Welcome to PoliNet'
+
+if __name__ == '__main__':
+    app_polinet.run(debug=True)
